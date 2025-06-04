@@ -747,6 +747,7 @@ ul {
 }
 .footer-bottom p {
     color: #00000099;
+    display: flex;
 }
 
 .inputun {
