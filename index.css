@@ -27,12 +27,15 @@ body {
     margin-top: 24px;
     justify-content: space-between;
     align-items: center;
+    margin-right: 100px;
 }
 
 .logo {
     margin-left: 100px;
     font-size: 32px;
     font-family: fantasy;
+    display: flex;
+    gap: 12px;
 }
 
 .class-nav {
@@ -76,10 +79,11 @@ a {
 }
 
 .line {
-    width: 100%;
     height: 1px;
     background-color: #0000001A;
     margin-top: 24px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .class-nav1 {
@@ -111,6 +115,9 @@ a {
     display: flex;
     gap: 14px;
     margin-top: 34px;
+}
+.review1 {
+    display: flex;
 }
 
 .icons {
@@ -155,6 +162,7 @@ a {
 
 .class-tieude {
     margin-left: 40px;
+    margin-right: 100px;
 }
 
 .new {
@@ -277,6 +285,8 @@ a {
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
+    margin-right: 100px;
+    align-items: center;
 }
 
 .text-a {
@@ -322,7 +332,7 @@ a {
 
 
 .text-left {
-    width: 610px;
+    width: 100%;
     height: 241px;
     border-radius: 20px;
     border: 1px solid #ccc;
@@ -359,6 +369,8 @@ a {
 
 .bi {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .number {
@@ -370,10 +382,16 @@ a {
 .right {
     margin-left: 28px;
     margin-top: 3px;
+    margin-right: 100px;
 }
 
 .class-flex {
     display: flex;
+}
+
+.center__you {
+    display: flex;
+    justify-content: center;
 }
 
 .loading {
@@ -384,7 +402,6 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-left: 605px;
     margin-top: 28px;
 }
 
@@ -395,12 +412,11 @@ a {
 
 .class-you {
     text-align: center;
-    margin-left: 100px;
     margin-top: 49px;
 }
 
 .hang__img {
-    width: 295px;
+    width: 100%;
     height: 298px;
     border-radius: 20px;
     object-fit: cover;
@@ -408,9 +424,13 @@ a {
 
 .hang {
     display: flex;
-    margin-left: 100px;
     gap: 21px;
     margin-top: 55px;
+}
+
+.boder__hang {
+    display: flex;
+    justify-content: space-around;
 }
 
 .evaluation1 {
@@ -449,8 +469,6 @@ a {
     background-color: #000000;
     border-radius: 20px;
     justify-content: space-between;
-
-    margin-top: 78px;
     display: flex;
 
 }
@@ -507,7 +525,7 @@ a {
 
 .class-email {
     margin-top: 36px;
-    margin-right: 64px;
+    width: 50%;
 }
 
 .text-left__h3 {
@@ -518,16 +536,15 @@ a {
 }
 
 .ellipsis {
-    margin-left: 420px;
     margin-top: 35px;
 }
 
 .title__hr {
-    width: 1240px;
     height: 2px;
     background-color: #0000001A;
     margin-left: 100px;
     margin-top: 24px;
+    margin-right: 100px;
 }
 
 @media (max-width: 1024px) {
@@ -564,6 +581,7 @@ a {
 
     .class-header {
         display: block;
+        margin-right: 0;
     }
 
     .class-nav {
@@ -571,9 +589,9 @@ a {
     }
 
     .logo {
-        margin-left: 0;
-        justify-content: center;
         display: flex;
+        justify-content: center;
+        margin-left: 0;
     }
 
     .class-flex {
@@ -583,6 +601,9 @@ a {
     .text-left {
         width: 100%;
         height: auto;
+    }
+    .func {
+        display: none;
     }
 
     /* .class-i {
@@ -604,12 +625,21 @@ a {
         margin-left: 28px;
     }
 
-    .loading {
-        margin-left: 35%;
-    }
-
     .ellipsis {
         display: none;
+    }
+
+    .right {
+        margin-right: 18px !important;
+    }
+
+    .left {
+        margin-right: 18px !important;
+    }
+
+    .inputun {
+        padding-left: 61px !important;
+        padding-right: 61px !important;
     }
 }
 
@@ -625,11 +655,26 @@ a {
     .container {
         margin-left: 10px;
     }
+
+    .inputun {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .footer-left {}
 }
 
 @media (max-width: 768px) {
     .class-add1 {
         width: 70%;
+        margin-left: 12px;
+    }
+
+    .class-email {
+        padding-right: 10px;
+    }
+    .footer__top {
+        display: block;
     }
 }
 
@@ -637,29 +682,38 @@ a {
     .class-reviews {
         display: block;
         margin-left: 28px;
-
     }
-
-    .hang {
+    .class-nav {
         display: block;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 425px) {
     .class-footer {
         display: block;
         height: auto;
+    }
+
+    .footer-bottom {
+        display: block !important;
+    }
+
+    .logo-footer {
+        justify-content: center !important;
+        gap: 0 !important;
     }
 
     .footer-left {
         width: 100%;
         margin: 0;
         margin-left: 30px;
+        font-size: 32px;
     }
 
     .class-i {
         height: auto;
         padding-right: 10px;
+        font-size: 14px;
     }
 
     .you {
@@ -667,13 +721,122 @@ a {
     }
 
     .dis-flexx {
-        width: 100%;
         margin-left: 30px;
     }
 
     .flex-tep {
-        width: 100%;
         margin-left: 30px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+
+    .inputun {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .search {
+        font-size: 14px;
+    }
+
+    .footer-left {
+        font-size: 26px;
+    }
+
+    .class-email {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .text-b {
+        display: none;
+    }
+    .social-icons {
+        margin-bottom: 20px ;
+    }
+    .demo {
+        display: flex;
+        justify-content: space-between;
+    }
+    .review1 {
+        display: block;
+    }
+    .review {
+        display: flex;
+    flex-direction: column-reverse;
+    }
+    .class-tieude {
+        margin-top: 12px;
+    }
+    .class-reviews {
+        display: flex;
+        margin-right: 0;
+    }
+    .footer-col1 {
+        margin-right: 15px !important;
+    }
+    .class-nav {
+        display: none;
+    }
+    .class-header {
+        margin-right: 0;
+    }
+    .logo {
+        margin-left: 10px !important;
+        justify-content: flex-start;
+    }
+    .func {
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    .func {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .footer {
+        padding: 30px 30px !important;
+    }
+
+    .dis-flexx {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .flex-tep {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer-left {
+        font-size: 24px;
+    }
+
+    .class-email {
+        box-sizing: border-box;
+        padding: 12px;
+    }
+    .footer-left {
+        font-size: 32px;
+        word-wrap: break-word;
+        box-sizing: border-box;
+        padding: 12px;
+    }
+    .hang {
+        display: block;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-left {
+        font-size: 28px;
+        margin-left: 0;
     }
 }
 
@@ -689,6 +852,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    margin-top: 78px;
 }
 
 .footer__parding h2 {
@@ -758,7 +922,7 @@ ul {
     padding-left: 100px;
     padding-right: 100px;
     position: relative;
-    width: 100%;
+    top: 90px;
 
 }
 
@@ -772,10 +936,6 @@ ul {
     gap: 12px;
 }
 
-.icons__logo {
-    width: 46.61px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    
+.footer-col {
+     
 }
