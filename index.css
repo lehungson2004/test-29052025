@@ -788,6 +788,10 @@ a {
     .func {
         display: block;
     }
+    .class-reviews h4 {
+        margin-top: 0 !important;
+        font-size: 18px !important;
+    }
 }
 @media (min-width: 768px) {
     .func {
